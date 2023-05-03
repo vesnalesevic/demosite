@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Older post"
+categories: ["jekyll", "update", "about"]
+description: something here
+tags: ["News", "Cheese"]
+---
+
+<strong>{{ page.title }}</strong>
+
+{{ page.categories | array_to_sentence_string }}
+
+<br />
+{{ page.date | date_to_string }}
+
+<br />
+{{ page.id }}
+
+<br />
+{{ page.next.title }}
+
+<br />
+{{ page.previous.title }}
+
+<br />
+{{ page.title }}
+
+<br />
+{{ page.collection }}
+
+<br />
+{{ page.tags | array_to_sentence_string }}
+
+<hr />
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

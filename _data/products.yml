@@ -1,0 +1,8 @@
+- name: product1
+  category: about
+
+- name: product2
+  category: something
+
+- name: product3
+  category: about

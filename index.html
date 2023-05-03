@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- <p>
+    {{ site.data.nba-players[0].name}}
+</p> -->
+
+<!-- {{ site.data.documents | size}}
+<h1>Parts</h1>
+
+<ul>
+    {% for parts in site.parts %}
+     <li>
+        <h2>{{ parts.name }}</h2>
+        <h3>{{ parts.price }}</h3>
+        <p>{{ parts.details }}</p>
+     </li>
+    {% endfor %}
+</ul> -->
+<h1>Posts</h1>
+
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <div>{{ post.date }}</div>
+        <a href="{{ post.url }}" style="text-decoration: none;"><h2>{{ post.title }}</h2></a>
+        <div>{{ post.tags | array_to_sentence_string }} </div>
+      </li>
+    {% endfor %}
+</ul>
+ 
